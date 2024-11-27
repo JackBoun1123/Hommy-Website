@@ -16,7 +16,8 @@ if($_SESSION['maLoai']=='2'){
             }
                 else{
                         if($_SESSION['maLoai']=='5'){
-                            require("layout/header-cda.php");
+                            require("layout/header_quanlyhethong.php");
+                            $_GET["page"]= 'trangchu_admin';
                     }
                         else{
                             if($_SESSION['maLoai']=='1'){

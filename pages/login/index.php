@@ -58,8 +58,8 @@ if (isset($_POST["btDangnhap"])) {
         <div class="login-box" style="margin-top:7%">
             <h2 style="text-align: center; font-size: 35px;">ĐĂNG NHẬP</h2>
             <form action="#" method="POST">
-                <input type="email" name="taikhoan" placeholder="taikhoan" required>
-                <input type="password" name="matkhau" placeholder="matkhau" required>
+                <input type="email" name="taikhoan" placeholder="Tài khoản hoặc email" required>
+                <input type="password" name="matkhau" placeholder="Mật khẩu" required>
                 <div class="d-flex justify-content-between align-items-center mb-3">
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" id="rememberMe">
