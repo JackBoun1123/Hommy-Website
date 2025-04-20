@@ -45,6 +45,8 @@ if(isset($_GET["mada"]))
 if(isset($_GET["maloai"]))
     $maloai=$_GET["maloai"];
 
+
+    
 if(file_exists("pages/".$page."/index.php"))
     include("pages/".$page."/index.php");
 

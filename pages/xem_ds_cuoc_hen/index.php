@@ -51,7 +51,22 @@ if (isset($_POST['ngayLoc'])) {
     $duan = $obj->xuatdulieu($sql);
     $isCapNhat = true; // Hiển thị trạng thái sau khi cập nhật
 } else {
-    $duan = []; // Không có dữ liệu ban đầu
+    // Truy vấn mặc định để hiển thị tất cả các cuộc hẹn
+    $sql = "SELECT 
+                ch.maCuocHen, 
+                ch.ngayDienRa, 
+                ch.thoiGian,
+                kh.tenKH, 
+                da.tenDA,
+                da.diaChiDA,
+                kh.soDT
+            FROM 
+                cuochen ch
+            JOIN 
+                khachhang kh ON ch.maKH = kh.maKH
+            JOIN 
+                duan da ON ch.maDA = da.maDA";
+    $duan = $obj->xuatdulieu($sql);
     $isCapNhat = false;
 }
 ?>

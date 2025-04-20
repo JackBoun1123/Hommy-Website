@@ -56,7 +56,7 @@
 
 
     if (isset($_POST['henlich'])) {
-        header("Location: index.php?page=henlich");
+        header("Location: index.php?page=henlich&maduan=" . $sanpham[0]['maDA']."");
         exit();
     }
 ?>

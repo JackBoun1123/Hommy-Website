@@ -1,6 +1,5 @@
 <?php
 class QuanLyTaiKhoan extends database
-class QuanLyTaiKhoan extends database
 {
     // Thêm tài khoản vào bảng tương ứng với từng loại tài khoản
     public function themTaiKhoan($tenTK, $matKhau, $maLoai, $trangThai, $ten, $soDT, $email, $diaChi, $khuVuc = null)
